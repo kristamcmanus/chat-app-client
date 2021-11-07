@@ -17,7 +17,7 @@ const ChannelSearch = () => {
   }
 
   const onSearch = (event) => {
-    // prevent reloading of page
+    // prevents reloading of page
     event.preventDefault();
 
     setLoading(true);
