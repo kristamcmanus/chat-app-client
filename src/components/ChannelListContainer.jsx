@@ -35,11 +35,12 @@ const ChannelListContainer = () => {
         <CompanyHeader />
         <ChannelSearch />
         <ChannelList
-          filters={}
+          filters={{}}
           channelRenderFilterFn={() => {}}
           List={(listProps) => (
             <TeamChannelList
               {...listProps}
+              type="team"
             />
           )}
         />
