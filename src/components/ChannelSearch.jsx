@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useChatContext } from 'stream-chat-react';
 
-import { SearchIcon } from '../assets';
+import { SearchIcon } from '../assets/SearchIcon.js';
 
 const ChannelSearch = () => {
-  const [query, setQuery] = useSate('');
+  const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
 
   // async - must wait for channels to be fetched
