@@ -12,7 +12,7 @@ const TeamChannelPreview = ({ channel, type }) => {
 
   const DirectPreview = () => {
     const members = Object.values(channel.state.members).filter(({ user }) => user.id != client.userID);
-
+    // private messages
     return (
       <div className="channel-preview__items single">
         <Avatar
@@ -24,7 +24,7 @@ const TeamChannelPreview = ({ channel, type }) => {
       </div>
     )
   }
-
+  // team messages
   return (
     <div className={
       channel?.id === activeChannel?.id
