@@ -14,7 +14,7 @@ const initialState = {
 }
 
 const Auth = () => {
-  const [form, setForm] = useState();
+  const [form, setForm] = useState(initialState);
   const [isSignup, setIsSignup] = useState(true);
 
 // e = event
@@ -25,6 +25,8 @@ const Auth = () => {
   const handleSubmit = (e) => {
     // to prevent reloading of page
     e.preventDefault();
+
+    console.log(form);
   }
 
   // when you want to change state depending on the previous state
