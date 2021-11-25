@@ -28,11 +28,11 @@ const Auth = () => {
   const handleSubmit = async (e) => {
     // to prevent reloading of page
     e.preventDefault();
-
+    // get all data from form
     const { fullName, username, password, phoneNumber, avatarURL } = form;
-
+    // get the URL
     const URL = 'http://localhost:5000/auth';
-
+    // make request to backend - to a different url depending on signing up or logging in
     const { data: { token, userId, hashedPassword } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
       username, password, fullName, phoneNumber, avatarURL,
     });
