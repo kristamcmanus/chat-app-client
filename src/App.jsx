@@ -8,7 +8,7 @@ import './App.css';
 const cookies = new Cookies();
 
 // initialize the chat
-const apiKey = 'bcfhsfsy3vdh';
+const apiKey = '7njrebyc843k';
 // auth is for login/registration
 const authToken = cookies.get('token');
 // create instance of stream chat
